@@ -5,6 +5,11 @@
 - Written in TypeScript
 - No dependencies. Using native fetch.
 
+## Installation
+```shell
+npm i --save strapi-provider-upload-bunny
+```
+
 ## Configuration
 
 ### Example
