@@ -1,0 +1,62 @@
+{
+  "version": "1.0.0",
+  "name": "strapi-provider-upload-bunny",
+  "keywords": [
+    "strapi",
+    "upload",
+    "provider",
+    "storage",
+    "bunny.net",
+    "plugin",
+    "cdn"
+  ],
+  "type": "commonjs",
+  "exports": {
+    "./package.json": "./package.json"
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "source": "./src/index.ts",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "build": "pack-up build",
+    "clean": "run -T rimraf ./dist",
+    "lint": "run -T eslint .",
+    "watch": "pack-up watch"
+  },
+  "devDependencies": {
+    "@strapi/pack-up": "^5.0.0-beta.3",
+    "@strapi/strapi": "^5.0.0-beta.3",
+    "@strapi/typescript-utils": "^5.0.0-beta.3",
+    "@tsconfig/node20": "^20.1.4",
+    "prettier": "^3.2.5",
+    "typescript": "^5.4.5"
+  },
+  "peerDependencies": {
+    "@strapi/strapi": "^5.x.x"
+  },
+  "strapi": {
+    "kind": "plugin",
+    "name": "strapi-provider-upload-bunny",
+    "displayName": "Bunny.net upload provider",
+    "description": "Upload media to a storage zone on Bunny.net "
+  },
+  "description": "Upload media to a storage zone on Bunny.net ",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/its-devtastic/strapi-provider-upload-bunny.git"
+  },
+  "bugs": {
+    "url": "https://github.com/its-devtastic/strapi-provider-upload-bunny/issues"
+  },
+  "homepage": "https://github.com/its-devtastic/strapi-provider-upload-bunny#readme",
+  "author": "Leon van der Grient <leon@devtastic.io>",
+  "engines": {
+    "node": ">=18.0.0 <=20.x.x",
+    "npm": ">=6.0.0"
+  }
+}
